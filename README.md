@@ -9,6 +9,7 @@ I used Google Firebase to create a database to which user data is saved. Data li
 * [AJAX](http://www.adaptivepath.org/ideas/ajax-new-approach-web-applications/) - Asynchronous JavaScript + XML.
 * [JavaScript](https://www.javascript.com/) - A high-level, interpreted programming language.
 * [Google Firebase](https://firebase.google.com/) - A mobile and web application development platform.
+* [Moment.js](https://momentjs.com/) - A JavaScript library that can parse, validate, manipulate, and display dates and times.
 
 ## Getting Started
 
