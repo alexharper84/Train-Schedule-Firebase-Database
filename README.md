@@ -2,6 +2,10 @@
 
 I used Google Firebase to create a database to which user data is saved. Data living on my Firebase database is displayed on the page.
 
+## Deployed from GitHub
+
+[Train Schedule Firebase Database](https://alexharper84.github.io/Train-Schedule-Firebase-Database/)
+
 ## Built With
 
 * [Bootstrap](https://getbootstrap.com/) - Twitter CSS.
