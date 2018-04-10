@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+
+  <!-- reset css -->
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <!-- bootstrap CSS  -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!-- custom css -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- firebase -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.0/moment.min.js"></script>
+  <script type="text/javascript" src="assets/js/app.js"></script>
+
+  <title>Firebase Train Schedule Database</title>
+</head>
+<body >
+
+  <header  id="jsi-ripple-container">
+    <div class="container-flex bg-dark text-light">
+      <div class="row  px-4 py-3">
+        <div id="wthrData" class="col-12 col-md-6 text-center text-md-left">
+        </div>
+        <div class="col-12 col-md-6 d-flex d-flex justify-content-center justify-content-md-end">
+          <h1 class="d-flex align-self-center mt-3 mt-md-0">Firebase Train Schedule Database</h1>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section class="container-fluid flex-grow">
+    <div class="row">
+      <div  class="col-md-9 order-md-2 pt-2">
+        <div class="panel panel-success">
+          <div class="panel-heading">
+            <h3 class="panel-title"><strong>Other users entered these trains:</strong></h3>
+          </div>
+          <div class="panel-body">
+            <table class="table table-hover" id='train-table'>
+              <thead>
+                <tr>
+                  <th>Train Name</th>
+                  <th>Destination</th>
+                  <th>Frequency (min)</th>
+                  <th>Next Arrival</th>
+                  <th>Minutes Away</th>
+                </tr>
+              </thead>
+              <tbody>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 order-md-1 pt-3">
+        <div class="bg-faded mb-3">
+          <h5 class="card-header">Enter Train Information to the Database</h5>
+          <div class="card-body">
+            <form>
+              <div class="form-group">
+                <label for="train-name-input">Train Name</label>
+                <input class="form-control" id="train-name-input" type="text">
+              </div>
+              <div class="form-group">
+                <label for="dest-input">Destination</label>
+                <input class="form-control" id="dest-input" type="text">
+              </div>
+              <div class="form-group">
+                <label for="firstTrain-input">First Train Time (HH:mm - military time)</label>
+                <input class="form-control" id="firstTrain-input" type="text">
+              </div>
+              <div class="form-group">
+                <label for="freq-input">Frequency (min)</label>
+                <input class="form-control" id="freq-input" type="text">
+              </div>
+              <button class="btn btn-success" id="add-train-btn" type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="bg-dark text-white mt-4">
+    <div class="container-fluid py-3">
+      <div class="row">
+        <div class="col-md-3">
+          <h5>Firebase Train Schedule Database</h5></div>
+          <div class="col-md-3"></div>
+          <div class="col-md-3"></div>
+          <div class="col-md-3"></div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">A Google Firebase database.<span class="small"><br>UCLA Full Stack Web Dev Bootcamp 2018</span></div>
+          <div class="col-md-3"></div>
+          <div class="col-md-3 text-right small align-self-end">©2018 Alexander Harper</div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script src="assets/js/koifish.js"></script>
+  </body>
+  </html>
