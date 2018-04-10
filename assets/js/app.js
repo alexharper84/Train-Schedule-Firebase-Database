@@ -64,6 +64,7 @@ $(document).ready(function(){
     // Time is to be entered on the entry form
     var firstTime = 0;
 
+    // backtrack a year for accuracy
     var firstTimeConverted = moment(firstTime, "HH:mm").subtract(1, "years");
 
     // Current Time
