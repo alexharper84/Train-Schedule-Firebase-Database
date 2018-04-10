@@ -1,3 +1,6 @@
+// I didn't write this!
+// Courtesy of https://codepen.io/K-T/pen/Ldgdab
+
 var RENDERER = {
 POWER : 10000,
 EDGE_OFFSET : 5,

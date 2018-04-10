@@ -16,10 +16,6 @@ $(document).ready(function(){
 
   var database = firebase.database();
 
-
-
-  // First Time (pushed back 1 year to make sure it comes before current time)
-
   // 2. Button for adding Trains
   $("#add-train-btn").on("click", function(event) {
     event.preventDefault();
@@ -54,8 +50,6 @@ $(document).ready(function(){
 
   // 3. Create Firebase event for adding train to the database and a row in the html when a user adds an entry
   database.ref().on("child_added", function(childSnapshot, prevChildKey) {
-
-    // console.log(childSnapshot.val());
 
     // Store everything into a variable.
     var trainName = childSnapshot.val().name;
