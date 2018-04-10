@@ -4,7 +4,7 @@ I used Google Firebase to create a database to which user data is saved. Data li
 
 ## Built With
 
-* [Bootstrap](https://getbootstrap.com/) - A Twitter's CSS library.
+* [Bootstrap](https://getbootstrap.com/) - A Twitter CSS library.
 * [jQuery](https://jquery.com/) - A fast, small, and feature-rich JavaScript library.
 * [AJAX](http://www.adaptivepath.org/ideas/ajax-new-approach-web-applications/) - Asynchronous JavaScript + XML.
 * [JavaScript](https://www.javascript.com/) - A high-level, interpreted programming language.
