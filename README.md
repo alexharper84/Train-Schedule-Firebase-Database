@@ -21,7 +21,7 @@ Please enter some information about your fictional or non-fictional train line. 
 
 * It works...
 * Those awesome Koi fish. (https://codepen.io/K-T/pen/Ldgdab)
-* App is mostly mobile responsive.
+* App is mobile responsive.
 
 ## License
 
